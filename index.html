@@ -50,7 +50,7 @@
       'Tågkrångel, signalfel! Får se när jag anländer till kontoret...'
       ];
 
-      var excuse = excuses[Math.round(Math.random() * excuses.length)];
+      var excuse = excuses[Math.round(Math.random() * (excuses.length - 1))];
 
       $('h1').text(excuse);
     });
