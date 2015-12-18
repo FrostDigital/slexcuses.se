@@ -7,7 +7,7 @@
 
   <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
   <style type="text/css">
-    
+
     * {
       margin: 0;
       padding: 0;
@@ -20,7 +20,7 @@
       padding: 10px;
       text-align: center;
     }
-  
+
 
     h1 {
       margin-top: 25%;
@@ -46,21 +46,21 @@
 
     $(function() {
       var excuses = [
-        'Jag la i en extra växel för att hinna till tåget men så var det växelfel.',
-        'Tågkrångel, signalfel! Får se när jag anländer till kontoret...'
+      'Jag la i en extra växel för att hinna till tåget men så var det växelfel.',
+      'Tågkrångel, signalfel! Får se när jag anländer till kontoret...'
       ];
 
-      var excuse = excuses[Math.floor(Math.random()*excuses.length)];
+      var excuse = excuses[Math.round(Math.random() * excuses.length)];
 
       $('h1').text(excuse);
     });
   </script>
 </head>
 <body>
-  
-<h1></h1>
 
-<a href="http://frostdigital.se" class="frost">Because sometimes we are late.</a>
+  <h1></h1>
+
+  <a href="http://frostdigital.se" class="frost">Because sometimes we are late.</a>
 
 </body>
 </html>
