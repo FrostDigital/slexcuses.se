@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SL Excuses</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <style type="text/css">
+    
+    * {
+      margin: 0;
+      padding: 0;
+      text-decoration: none;
+      color: #222;
+    }
+    
+    body {
+      font-family: Arial, Helvetica;      
+      padding: 10px;
+      text-align: center;
+    }
+  
+
+    h1 {
+      margin-top: 25%;
+      font-weight: 500;
+      font-size: 32px;
+    }
+
+    p {
+      line-height: 20px;
+    }
+
+    .frost {
+      position: absolute;
+      bottom: 10px;
+      left: 0;
+      display: block;
+      text-align: center;
+      width: 100%;
+    }
+
+  </style>
+  <script type="text/javascript">
+
+    $(function() {
+      var excuses = [
+        'Jag la i en extra växel för att hinna till tåget men så var det växelfel.',
+        'Tågkrångel, signalfel! Får se när jag anländer till kontoret...'
+      ];
+
+      var excuse = excuses[Math.floor(Math.random()*excuses.length)];
+
+      $('h1').text(excuse);
+    });
+  </script>
+</head>
+<body>
+  
+<h1></h1>
+
+<a href="http://frostdigital.se" class="frost">Because sometimes we are late.</a>
+
+</body>
+</html>
